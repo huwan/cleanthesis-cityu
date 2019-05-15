@@ -1,71 +1,82 @@
 % !TEX root = my-thesis.tex
 
-
-% **************************************************
-% Files' Character Encoding
-% **************************************************
-\PassOptionsToPackage{utf8}{inputenc}
-\usepackage{inputenc}
-
-
 % **************************************************
 % Information and Commands for Reuse
 % **************************************************
-\newcommand{\thesisTitle}{The Clean Thesis Style}
-\newcommand{\thesisName}{Ricardo Langner}
-\newcommand{\thesisSubject}{Documentation}
-\newcommand{\thesisDate}{October 4, 2015}
-\newcommand{\thesisVersion}{My First Draft}
 
-\newcommand{\thesisFirstReviewer}{Jane Doe}
-\newcommand{\thesisFirstReviewerUniversity}{\protect{Clean Thesis Style University}}
-\newcommand{\thesisFirstReviewerDepartment}{Department of Clean Thesis Style}
+%% The title of the thesis
+\renewcommand{\title}{A Discussion on Higher Education Development in Hong Kong}
+\newcommand{\titlezh}{論香港高等教育的發展}
+% \newcommand{\shorttitle}{A Discussion on Higher Education Development in HK}
 
-\newcommand{\thesisSecondReviewer}{John Doe}
-\newcommand{\thesisSecondReviewerUniversity}{\protect{Clean Thesis Style University}}
-\newcommand{\thesisSecondReviewerDepartment}{Department of Clean Thesis Style}
+%% The full name of the author
+\renewcommand{\author}{Chan Tai Man}
+\newcommand{\authorzh}{陳大文}
 
-\newcommand{\thesisFirstSupervisor}{Jane Doe}
-\newcommand{\thesisSecondSupervisor}{John Smith}
+%% University
+\newcommand{\university}{City University of Hong Kong}
+\newcommand{\universityzh}{香港城市大學}
+\newcommand{\universityabbr}{CityU}
+% Joint PhD Programme
+% \newcommand{\partneruniversity}{University of Science and Technology of China}
 
-\newcommand{\thesisUniversity}{\protect{Clean Thesis Style University}}
-\newcommand{\thesisUniversityDepartment}{Department of Clean Thesis Style}
-\newcommand{\thesisUniversityInstitute}{Institute for Clean Thesis Dev}
-\newcommand{\thesisUniversityGroup}{Clean Thesis Group (CTG)}
-\newcommand{\thesisUniversityCity}{City}
-\newcommand{\thesisUniversityStreetAddress}{Street address}
-\newcommand{\thesisUniversityPostalCode}{Postal Code}
+%% Department
+\newcommand{\dept}{Department of Public Policy}
+\newcommand{\deptzh}{公共政策學系}
 
+%% Full title of the Degree
+\newcommand{\degreetitle}{Doctor of Philosophy} % Master/Doctor of Philosophy as appropriate
+\newcommand{\degreetitlezh}{哲學博士學位} % 哲學碩士/博士學位 as appropriate
+\newcommand{\degreetitleabbr}{PhD} % MPhil or PhD as appropriate
 
-% **************************************************
-% Debug LaTeX Information
-% **************************************************
-%\listfiles
+%% Submission date
+\newcommand{\degreedate}{July 2018}
+\newcommand{\degreedatezh}{二零一八年七月}
 
+%% Meta information will appear in the PDF meta-information
+\subject{LaTeX}
+\newcommand{\keywords}{{LaTeX} {PhD Thesis} {Engineering}}
+
+% Submission Text
+\newcommand{\submissiontexta}{Submitted to}
+\newcommand{\submissiontextb}{in Partial Fulfillment of the Requirements\par for the Degree of\space}
+\newcommand{\submissiontextc}{awarded by City University of Hong Kong\par for successful completion of the joint programme with\par\space}
+
+\newcommand{\smallfontsize}   {\fontsize{12bp}{14bp} \selectfont}
+\newcommand{\Largefontsize}   {\fontsize{18bp}{20bp} \selectfont}
 
 % **************************************************
 % Load and Configure Packages
 % **************************************************
+\usepackage{fontspec}
+\newfontfamily\mingliu{PMingLiU}
+\newcommand\chinese[1]{{\mingliu #1}}
+\newfontfamily\timesnewroman{Times New Roman}
+\newcommand\english[1]{{\timesnewroman #1}}
+
 \usepackage[english]{babel} % babel system, adjust the language of the content
 \PassOptionsToPackage{% setup clean thesis style
-    figuresep=colon,%
-    sansserif=false,%
+    figuresep=space,%
     hangfigurecaption=false,%
-    hangsection=true,%
-    hangsubsection=true,%
+    hangsection=false,%
+    hangsubsection=false,%
+    sansserif=false,%
+    configurelistings=true,%
     colorize=full,%
-    colortheme=bluemagenta,%
-    bibsys=biber,%
+    colortheme=bluegreen,%
+    configurebiblatex=true,%
+    bibsys=bibtex,%
     bibfile=bib-refs,%
-    bibstyle=alphabetic,%
-    wrapfooter=false,%
+    bibstyle=numeric,%
+    bibsorting=nty,%
+    twoside=true
 }{cleanthesis}
 \usepackage{cleanthesis}
 
 \hypersetup{% setup the hyperref-package options
-    pdftitle={\thesisTitle},    %   - title (PDF meta)
-    pdfsubject={\thesisSubject},%   - subject (PDF meta)
-    pdfauthor={\thesisName},    %   - author (PDF meta)
+    pdftitle={},    %   - title (PDF meta)
+    pdfsubject={},%   - subject (PDF meta)
+    pdfauthor={},    %   - author (PDF meta)
     plainpages=false,           %   -
     colorlinks=false,           %   - colorize links?
     pdfborder={0 0 0},          %   -
@@ -73,3 +84,6 @@
     bookmarksnumbered=true,     %
     bookmarksopen=true          %
 }
+
+\usepackage[pass]{geometry}
+% \usepackage{showframe}

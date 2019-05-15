@@ -1,61 +1,29 @@
-# Clean Thesis
-*-- A Clean LaTeX Style for Thesis Documents --*
+# cleanthesis-cityu
 
-## Table of contents
+An XeLaTeX thesis template for research postgraduate (MPhil and PhD) and professional doctorate (PD) students at City University of Hong Kong.
 
-* [About](#about)
-* [Getting started](#getting-started)
-* [Documentation and Support](#documentation-and-support)
-* [Contributing](#contributing)
-* [License Information](#license-information)
+This thesis tempalte builds upon the [Clean Thesis](https://github.com/derric/cleanthesis) from Ricardo Langner. It is adapted to meet the regulations governing the format of theses (as of 2018-19).
 
-## About
+Please read Regulations Governing the Format of Theses and Sample of the Front Cover/Spine/Title Page of a Thesis (Appendixes 12 and 13 of the [Guidebook for Research Degree Studies](https://www.sgs.cityu.edu.hk/student/rpg/studentGuideBook)). See [my-thesis.pdf](my-thesis.pdf) for an example PDF created with this template.
 
-**Clean, Simple, Elegant**
-*Clean Thesis* is a LaTeX style for thesis documents, developed for my diploma thesis (Diplomarbeit). The style can be understood as my personal compromise — a typical clean looking scientific document combined and polished with minor beautifications.
 
-The design of this *Clean Thesis* style is inspired by user guide documents from Apple Inc.
+Credit goes to Ricardo Langner, author of the Clean Thesis above.
 
-Note: If you are looking for an exact and correct style regarding typographic rules, please have a look at the "[Classic Thesis Style](see http://www.miede.de/#classicthesis)".
+## Prerequisites
 
-**Donation = Postcard**
-Based on the idea of André Miede: If you like the *Clean Thesis* style I would be very pleased about a donation in the form of a POSTCARD. You can find my address at the *Clean Thesis* [website](http://cleanthesis.der-ric.de/) as well as in the [documentation](doc/cleanthesis-doc.pdf). I am going to collect all postcards and exhibit them at the website I mentioned.
+- **Fonts**: Times New Roman and MingLiU/細明體 (PMingLiU/新細明體) should be used in the title page of a thesis to provide thesis information in both Chinese and English. Make sure they have already been installed system-wide.
 
-**Idea and Inspiration**
-The idea of providing my customized style for thesis documents passed through my mind while writing my own thesis. Motivated and inspired by the superb "[Classic Thesis Style](http://www.miede.de/#classicthesis)" by André Miede (thanks to André for doing a great job) I decided to collect all design and style related functionality in a separate LaTeX style and provide this style to other thesis writers.
+- **XeLaTeX**: Configure your document to be compiled with `XeLaTeX` typesetting engine to use the external fonts above.
 
-## Getting started
 
-* Make sure you have an up-to-date TeX distribution
-* Download the latest [release](https://github.com/derric/cleanthesis/releases) or clone the repository with `git clone https://github.com/derric/cleanthesis.git`
-* Check out the included [example thesis](my-thesis.tex)
-* [Read the documentation](doc/cleanthesis-doc.pdf) to learn more about *Clean Thesis* and available package options
+## Usage
 
-## Documentation and Support
+The main file is `my-thesis.tex`, from which a number of other files are included. Take a look at the comments in the LaTeX sources for some more specific pointers.
 
-The [documentation](doc/cleanthesis-doc.pdf) gives an overview of available package options.
+To compile, simply run `my-thesis.tex` through `XeLaTeX`.
 
-Please ask **questions** or start **discussions** about *Clean Thesis* at [Stack Exchange](http://tex.stackexchange.com/questions/tagged/cleanthesis) (tagged [cleanthesis](http://tex.stackexchange.com/questions/tagged/cleanthesis)). GitHub issues are for development purposes, e.g, reporting bugs or requesting new features.
+See Clean Thesis' original [README](README-cleanthesis.md) for more details.
 
-## Contributing
+## License
 
-Did you find an error or a bug? Do you have a feature request? Before opening a [new issue](https://github.com/derric/cleanthesis/issues/new), please check out the list of [existing](https://github.com/derric/cleanthesis/issues) and [closed](https://github.com/derric/cleanthesis/issues?q=is%3Aissue+is%3Aclosed) issues.
-
-## License Information
-
-README.md
-Copyright 2016 R. Langner
-
-This work may be distributed and/or modified under the
-conditions of the LaTeX Project Public License, either version 1.3
-of this license or (at your option) any later version.
-The latest version of this license is in
-  http://www.latex-project.org/lppl.txt
-and version 1.3 or later is part of all distributions of LaTeX
-version 2005/12/01 or later.
-
-This work has the LPPL maintenance status `maintained'.
-
-The Current Maintainer of this work is R. Langner.
-
-This work consists of all files listed in MANIFEST.md.
+[Clean Thesis](https://github.com/derric/cleanthesis) by Ricardo Langner is licensed under the LaTeX Project Public License (version 1.3).

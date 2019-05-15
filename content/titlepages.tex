@@ -1,86 +1,58 @@
 % !TEX root = ../my-thesis.tex
 %
-% ------------------------------------  --> cover title page
-\begin{titlepage}
-	\pdfbookmark[0]{Cover}{Cover}
-	\flushright
-	\hfill
-	\vfill
-	{\LARGE\thesisTitle \par}
-	\rule[5pt]{\textwidth}{.4pt} \par
-	{\Large\thesisName}
-	\vfill
-	\textit{\large\thesisDate} \\
-	Version: \thesisVersion
-\end{titlepage}
+\newgeometry{left=45mm,right=45mm,top=50mm,bottom=50mm,noheadfoot,nomarginpar}
 
-
-% ------------------------------------  --> main title page
 \begin{titlepage}
 	\pdfbookmark[0]{Titlepage}{Titlepage}
-	\tgherosfont
-	\centering
+	% \tgherosfont
 
-	{\Large \thesisUniversity} \\[4mm]
-	\includegraphics[width=6cm]{gfx/Clean-Thesis-Logo} \\[2mm]
-	\textsf{\thesisUniversityDepartment} \\
-	\textsf{\thesisUniversityInstitute} \\
-	\textsf{\thesisUniversityGroup} \\
+\begin{spacing}{0.8}
+\begin{center}
 
-	\vfill
-	{\large \thesisSubject} \\[5mm]
-	{\LARGE \color{ctcolortitle}\textbf{\thesisTitle} \\[10mm]}
-	{\Large \thesisName} \\
+% University
+{\Largefontsize
+  {\expandafter\MakeUppercase\expandafter{\english\university} \par}
+  {\chinese \universityzh \par}
 
-	\vfill
-	\begin{minipage}[t]{.27\textwidth}
-		\raggedleft
-		\textit{1. Reviewer}
-	\end{minipage}
-	\hspace*{15pt}
-	\begin{minipage}[t]{.65\textwidth}
-		{\Large \thesisFirstReviewer} \\
-	  	{\small \thesisFirstReviewerDepartment} \\[-1mm]
-		{\small \thesisFirstReviewerUniversity}
-	\end{minipage} \\[5mm]
-	\begin{minipage}[t]{.27\textwidth}
-		\raggedleft
-		\textit{2. Reviewer}
-	\end{minipage}
-	\hspace*{15pt}
-	\begin{minipage}[t]{.65\textwidth}
-		{\Large \thesisSecondReviewer} \\
-	  	{\small \thesisSecondReviewerDepartment} \\[-1mm]
-		{\small \thesisSecondReviewerUniversity}
-	\end{minipage} \\[10mm]
-	\begin{minipage}[t]{.27\textwidth}
-		\raggedleft
-		\textit{Supervisors}
-	\end{minipage}
-	\hspace*{15pt}
-	\begin{minipage}[t]{.65\textwidth}
-		\thesisFirstSupervisor\ and \thesisSecondSupervisor
-	\end{minipage} \\[10mm]
+  \vspace{54bp}
 
-	\thesisDate \\
+  % Title
+  {\english \title \par}
+  {\chinese \titlezh \par}
+}
+
+\vspace{36bp}
+% \vfill
+
+% % Submission Text
+{\smallfontsize
+  {\english \submissiontexta \par}
+  {\english \dept \par}
+  {\chinese \deptzh \par}
+  {\english \submissiontextb \english \degreetitle \par}
+  {\chinese \degreetitlezh \par}
+  {\ifdefined\partneruniversity{\english \submissiontextc \english \partneruniversity\par}\else\fi}
+\vfill
+
+% \vspace{36bp}
+  {\english {by}}
+\vspace{36bp}
+
+  % Author
+  {\english \author \par}
+  {\chinese \authorzh \par}
+
+\vspace{36bp}
+
+  %Degree date
+  {\english \degreedate \par}
+  {\chinese \degreedatezh \par}
+}
+
+\end{center}
+\end{spacing}
+
 
 \end{titlepage}
 
-
-% ------------------------------------  --> lower title back for single page layout
-\hfill
-\vfill
-{
-	\small
-	\textbf{\thesisName} \\
-	\textit{\thesisTitle} \\
-	\thesisSubject, \thesisDate \\
-	Reviewers: \thesisFirstReviewer\ and \thesisSecondReviewer \\
-	Supervisors: \thesisFirstSupervisor\ and \thesisSecondSupervisor \\[1.5em]
-	\textbf{\thesisUniversity} \\
-	\textit{\thesisUniversityGroup} \\
-	\thesisUniversityInstitute \\
-	\thesisUniversityDepartment \\
-	\thesisUniversityStreetAddress \\
-	\thesisUniversityPostalCode\ and \thesisUniversityCity
-}
+\restoregeometry
