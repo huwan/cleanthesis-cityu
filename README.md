@@ -6,8 +6,10 @@ This thesis tempalte builds upon the [Clean Thesis](https://github.com/derric/cl
 
 Please read Regulations Governing the Format of Theses and Sample of the Front Cover/Spine/Title Page of a Thesis (Appendixes 12 and 13 of the [Guidebook for Research Degree Studies](https://www.sgs.cityu.edu.hk/student/rpg/studentGuideBook)). See [my-thesis.pdf](my-thesis.pdf) for an example PDF created with this template.
 
-
 Credit goes to Ricardo Langner, author of the Clean Thesis above.
+
+This template is included in **[CityU-Thesis](https://github.com/huwan/CityU-Thesis)**, a collection of LaTeX thesis template for students at City University of Hong Kong. You can find more templates in that repository.
+
 
 ## Prerequisites
 
