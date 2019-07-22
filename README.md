@@ -26,6 +26,10 @@ To compile, simply run `my-thesis.tex` through `XeLaTeX`.
 
 See Clean Thesis' original [README](README-cleanthesis.md) for more details.
 
+## Online
+
+cleanthesis-cityu is added to the Overleaf Gallery. You can find it [here](https://www.overleaf.com/latex/templates/thesis-teamplate-city-university-of-hong-kong-with-cleanthesis/chjmxtmnqjmp).
+
 ## License
 
 [Clean Thesis](https://github.com/derric/cleanthesis) by Ricardo Langner is licensed under the LaTeX Project Public License (version 1.3).
